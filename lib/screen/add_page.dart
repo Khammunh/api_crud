@@ -76,6 +76,7 @@ class _AddTodoPageState extends State<AddTodoPage> {
       descriptionController.text = '';
       print('Creation Success');
       showSuccessMessage('Creation Success');
+      Navigator.pop(context);
     } else {
       print('Creation Failed');
       print(response.body);
